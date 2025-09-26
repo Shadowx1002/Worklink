@@ -1,0 +1,231 @@
+.projectView {
+  font-family: 'Poppins', sans-serif;
+  padding: 30px;
+  background-color:#fff;
+}
+  
+.header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.projectTitle {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+  text-align: left;
+}
+
+.projectDescription {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 12px;
+  text-align: justify;
+  
+}
+
+.detailsContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.projectDetails,
+.clientDetails {
+  flex: 1;
+  padding: 25px;
+}
+
+.projectDetails {
+  margin-right: 20px;
+}
+
+.projectDetails .horizontalLine {
+  border: none;
+  border-top: 4px solid #ddd;
+  margin: 20px 0;
+}
+
+.projectDetails h3,
+.clientDetails h3 {
+  font-size: 1.2rem;
+  color: #3e9cff;
+  margin-bottom: 15px;
+}
+
+.projectDetails p,
+.clientDetails p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.projectDetails i,
+.clientDetails i {
+  margin-right: 5px;
+  font-size: 20px;
+  color: #1d70f6;
+}
+
+.clientDetails {
+  flex: 1;
+  padding: 25px;
+  margin-right: -50px; /* Moves the clientDetails section to the left */
+}
+
+.skillsSection h3 {
+  font-size: 1.4rem;
+  color: #3e9cff;
+  margin-bottom: 15px;
+}
+
+.skillsSection p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.skillsBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skillsBox .skill {
+  padding: 8px 15px;
+  background-color: #00b3ff;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  text-transform: capitalize;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.skillsBox .skill:hover {
+  background-color: #3796da;
+  
+}
+
+.actions {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column; 
+  align-items:flex-end;
+  margin: 30px;
+  gap: 20px; 
+}
+
+.saveButton {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  background-color: #2989f0;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 200px; /* Adjusts the button width for a consistent look */
+}
+
+.saveButton i{
+  color: white;
+}
+
+.applyButton {
+  background-color: #fff; /* White background */
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #2989f0; /* Blue text */
+  border: 3px solid #2989f0; /* Blue border */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 200px; /* Adjusts the button width for a consistent look */
+}
+
+.applyButton:hover {
+  background-color: #a9c5f0; /* Slightly darker blue background */
+  color: #0d75e4; /* Darker blue text */
+  border-color: #0668f1; /* Darker blue border */
+}
+
+
+
+
+
+.loading,
+.error,
+.noProject {
+  font-size: 1.4rem;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  font-weight: 500;
+}
+
+.loading {
+  color: #0056b3;
+}
+
+.error {
+  color: #d9534f;
+}
+
+.noProject {
+  color: #f0ad4e;
+}
+
+.successMessage {
+  position: relative;
+  background-color: #2989f0; /* Green color with transparency */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for better contrast */
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+  
+  /* Blur effect */
+  backdrop-filter: blur(10px); /* Creates the blur effect on the background */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+.successMessage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1); /* Slight overlay to enhance the blur effect */
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.successMessage i {
+  margin-right: 10px; /* Adds some space between the icon and text */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.projectView {
+  animation: slideIn 0.8s ease-out;
+}

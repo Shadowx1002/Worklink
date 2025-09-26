@@ -1,0 +1,76 @@
+.categories {
+  position: relative;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.categories h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.categories h2 span {
+  color: #007bff;
+}
+
+.categoriesContainer {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.category {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.category img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.category:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.category:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
