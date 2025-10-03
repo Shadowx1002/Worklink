@@ -3,7 +3,7 @@ import './MainContent.css';
 import Header from './Header';
 import Footer from './Footer';
 import SectionTwo from './SectionTwo';
-import SectionThree from './sectionThree';
+import SectionThree from './SectionThree';
 
 const  MainContent =() => {
   return (
