@@ -19,7 +19,7 @@ const SectionTwo = () => {
 
         <div className={styles.sectionTwoRight}>
             <img 
-            src="./src/assets/MainContent/collabaration.gif" 
+            src="/collabaration.gif" 
             alt="Freelancer collaboration" 
             className={styles.sectionImage}
             />
