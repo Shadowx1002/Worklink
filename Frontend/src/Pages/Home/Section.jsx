@@ -6,7 +6,7 @@ const Section = () => {
       
       <div className={styles.sectionLeft}>
         <img 
-          src="./src/assets/MainContent/freelancer.avif" 
+          src="./freelancer.avif" 
           alt="Freelancer working" 
           className={styles.sectionImage}
         />

@@ -133,7 +133,7 @@ function SignupForm() {
     <Box
       sx={{
         flex: 1,
-        backgroundImage: 'url(../../public/work_home.svg)', 
+        backgroundImage: 'url(/work_home.svg)', 
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: { xs: 300, md: 'auto' }, 
